@@ -21,6 +21,10 @@ namespace Logistics_project
             VehicleID = vId;
             VehicleCapacity = cap;
         }
+        public Vehicle()
+        {
+
+        }
     }
     
 }
