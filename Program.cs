@@ -19,8 +19,12 @@ namespace Logistics_project
 
         }
 
-
-
+        //git init
+        //git add -A
+        //git commit -m 'Added my project'
+        //git remote add origin git @github.com/MarcinD123/Logistics_project.git
+        // git push -u -f origin master
+        //https://github.com/MarcinD123/Logistics_project.git
 
     }
 
