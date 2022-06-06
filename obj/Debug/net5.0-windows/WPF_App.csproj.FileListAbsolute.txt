@@ -56,3 +56,7 @@ C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\WPF_App.dll
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\ref\WPF_App.dll
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\WPF_App.pdb
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\WPF_App.genruntimeconfig.cache
+C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\ProductWindow.g.cs
+C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\ProductWindow.baml
+C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\ProductPage.g.cs
+C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\ProductPage.baml

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+
 using Microsoft.EntityFrameworkCore;
 
 namespace WPF_App
@@ -25,17 +26,13 @@ namespace WPF_App
         public MainWindow()
         {
             InitializeComponent();
-            string connectionString = @"Data Source=DESKTOP-CPTE25K\SQLEXPRESS;Initial Catalog=WpfAppDb;Integrated Security=True";
+            //string connectionString = @"Data Source=DESKTOP-CPTE25K\SQLEXPRESS;Initial Catalog=WpfAppDb;Integrated Security=True";
             
-            using (Connection db = new Connection(connectionString))
+            using (Connection db = new Connection(Connection.connectionString))
             {
                 //try
                 //{
-                    var a = db.Orders;
-                    int id = a.Count();
-                    Console.WriteLine("xD");
-                    db.Add(new Order(id + 1, 2, 4, 5));
-                    db.Add(new Product(id + 1, "kremówka", "Food", 20M));
+                    
                     db.SaveChanges();
                 //}
                 //catch (Exception)
@@ -45,6 +42,14 @@ namespace WPF_App
                 //}//var x = db.Add
                 
             }
+        }
+
+        private void ProductsWindow_Click(object sender, RoutedEventArgs e)
+        {
+            ProductWindow productWindow = new ProductWindow();
+            //this.Visibility = Visibility.Hidden;
+            productWindow.Show();
+            MainFrame.Content = new ProductPage();
         }
     }
 }
