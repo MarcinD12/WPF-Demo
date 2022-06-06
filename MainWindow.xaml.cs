@@ -44,12 +44,6 @@ namespace WPF_App
             }
         }
 
-        private void ProductsWindow_Click(object sender, RoutedEventArgs e)
-        {
-            ProductWindow productWindow = new ProductWindow();
-            //this.Visibility = Visibility.Hidden;
-            productWindow.Show();
-            MainFrame.Content = new ProductPage();
-        }
+        
     }
 }

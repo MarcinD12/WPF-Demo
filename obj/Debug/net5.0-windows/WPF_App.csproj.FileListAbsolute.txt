@@ -60,3 +60,7 @@ C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\ProductWindow.g.cs
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\ProductWindow.baml
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\ProductPage.g.cs
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\ProductPage.baml
+C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Product\NewProduct.g.cs
+C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Product\ProductPage.g.cs
+C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Productstuff\NewProduct.g.cs
+C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Productstuff\ProductPage.g.cs

@@ -27,7 +27,7 @@ namespace WPF_App
 
         public void addItem_Click(object sender, RoutedEventArgs e)
         {
-            Product.Create();
+            //Product.Create();
         }
     }
 }
