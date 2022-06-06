@@ -17,5 +17,7 @@ namespace Logistics_project
         public int ProductID { get; set; }
         public int Amount { get; set; }
         public int PickUpID { get; set; }
+
+        ///xD
     }
 }
