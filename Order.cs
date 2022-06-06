@@ -9,18 +9,18 @@ namespace WPF_App
     public class Order
     {
         public int OrderID { get; set; }
-        public int WarehouseID { get; set; }
+        public int ShopId { get; set; }
         public int ProductID { get; set; }
         public int Amount { get; set; }
-        public string Vehicle { get; set; }
+        
 
-        public Order(int OrderID_, int WarehouseID_, int ProductID_, int Amount_, string Vehicle_)
+        public Order(int OrderID_, int ShopId, int ProductID_, int Amount_)
         {
             this.OrderID = OrderID_;
-            this.WarehouseID = WarehouseID_;
+            this.ShopId = ShopId;
             this.ProductID = ProductID_;
             this.Amount = Amount_;
-            this.Vehicle = Vehicle_;
+            
         }
         public Order()
         {

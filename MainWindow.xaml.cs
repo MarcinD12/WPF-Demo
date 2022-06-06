@@ -26,13 +26,24 @@ namespace WPF_App
         {
             InitializeComponent();
             string connectionString = @"Data Source=DESKTOP-CPTE25K\SQLEXPRESS;Initial Catalog=WpfAppDb;Integrated Security=True";
-
+            
             using (Connection db = new Connection(connectionString))
             {
-                int id = db.Orders.Count();
-                Console.WriteLine("xD");
-                db.Add(new Order(id+1, 2, 4, 5, "chuj"));
-                db.SaveChanges();
+                //try
+                //{
+                    var a = db.Orders;
+                    int id = a.Count();
+                    Console.WriteLine("xD");
+                    db.Add(new Order(id + 1, 2, 4, 5));
+                    db.Add(new Product(id + 1, "kremówka", "Food", 20M));
+                    db.SaveChanges();
+                //}
+                //catch (Exception)
+                //{
+
+                //    MessageBox.Show("xD");
+                //}//var x = db.Add
+                
             }
         }
     }
