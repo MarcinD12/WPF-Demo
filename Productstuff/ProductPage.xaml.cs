@@ -43,5 +43,11 @@ namespace WPF_App
             AllProductsWindow allProductsWindow = new();
             allProductsWindow.Show();
         }
+
+        private void editItem_Click(object sender, RoutedEventArgs e)
+        {
+            EditItemWindow editItemWindow = new();
+            editItemWindow.Show();
+        }
     }
 }

@@ -26,7 +26,7 @@
         <TextBox x:Name="prodNameInp" Grid.Row="2" Grid.Column="1" Text="">  </TextBox>
         <TextBox x:Name="prodPriceInp" Grid.Row="2" Grid.Column="5" Text=""></TextBox>
         <Button x:Name="ProductAddBtn" Content="ADD PRODUCT" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="5" Click="ProductAddBtn_Click" > </Button>
-        <!--<ListBox x:Name="productList" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2"  SelectionChanged="ListBox_SelectionChanged" ItemsSource="{Binding Product.Types,Mode=OneWay}" />-->
+        <!--<ListBox x:Name="productList" Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="2"  SelectionChanged="ListBox_SelectionChanged" ItemsSource="{Binding Product.Types,Mode=OneWay}" />-->
         <ComboBox Name="productList" Grid.Column="2" Grid.Row=" 2" Grid.ColumnSpan="3" ItemsSource="{Binding Product.Types,Mode=OneWay}" SelectionChanged="productList_SelectionChanged" />
     </Grid>
 </Window>

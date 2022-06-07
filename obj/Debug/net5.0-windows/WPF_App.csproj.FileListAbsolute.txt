@@ -64,3 +64,5 @@ C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Productstuff\Delete
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Productstuff\DeleteItemWindow.baml
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Productstuff\AllProductsWindow.g.cs
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Productstuff\AllProductsWindow.baml
+C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Productstuff\EditItemWindow.g.cs
+C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Productstuff\EditItemWindow.baml

@@ -13,6 +13,9 @@
     <Compile Update="Productstuff\DeleteItemWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Productstuff\EditItemWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Productstuff\NewProductWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -28,6 +31,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Productstuff\DeleteItemWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Productstuff\EditItemWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Productstuff\NewProductWindow.xaml">

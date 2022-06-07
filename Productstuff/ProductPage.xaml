@@ -28,7 +28,7 @@
         <Button x:Name="addItem" Content="Add new item" Grid.Column="2" Grid.Row="2" Click="addItem_Click" ></Button>
         <Button x:Name="deleteItem" Content="Remove item" Grid.Column="3" Grid.Row="2" Click="deleteItem_Click"  ></Button>
         <Button x:Name="showItems" Content="Show items" Grid.Column="4" Grid.Row="2" Click="showItems_Click"  ></Button>
-
+        <Button x:Name="editItem" Content="Edit item" Grid.Column="5" Grid.Row="2" Click="editItem_Click"  ></Button>
     </Grid>
         <!--<TextBlock HorizontalAlignment="Left" Margin="303,204,0,0" Text="chuj" TextWrapping="Wrap" VerticalAlignment="Top" Height="128" Width="344"/>-->
 
