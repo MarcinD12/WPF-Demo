@@ -32,8 +32,7 @@ namespace WPF_App
             {
                 //try
                 //{
-                    
-                    db.SaveChanges();
+                
                 //}
                 //catch (Exception)
                 //{
@@ -44,6 +43,9 @@ namespace WPF_App
             }
         }
 
-        
+        private void productsWindowClick(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new ProductPage();
+        }
     }
 }

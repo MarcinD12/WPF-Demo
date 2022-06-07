@@ -5,15 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_App.Productstuff"
         mc:Ignorable="d"
-        Title="NewProductWindow" Height="150" Width="300">
+        Title="New Product" Height="150" Width="300">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="25"/>
             <ColumnDefinition Width="50"/>
             <ColumnDefinition Width="50"/>
             <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="25"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
@@ -21,9 +22,11 @@
             <RowDefinition Height="20"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Fill fields: Product Name/Product Type/Price" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="4"></TextBlock>
+        <TextBlock Text="Fill fields: Product Name/Product Type/Price" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5"></TextBlock>
         <TextBox x:Name="prodNameInp" Grid.Row="2" Grid.Column="1" Text="">  </TextBox>
-        <Button x:Name="ProductAddBtn" Content="ADD PRODUCT" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="4" > </Button>
-                
+        <TextBox x:Name="prodPriceInp" Grid.Row="2" Grid.Column="5" Text=""></TextBox>
+        <Button x:Name="ProductAddBtn" Content="ADD PRODUCT" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="5" Click="ProductAddBtn_Click" > </Button>
+        <!--<ListBox x:Name="productList" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2"  SelectionChanged="ListBox_SelectionChanged" ItemsSource="{Binding Product.Types,Mode=OneWay}" />-->
+        <ComboBox Name="productList" Grid.Column="2" Grid.Row=" 2" Grid.ColumnSpan="3" ItemsSource="{Binding Product.Types,Mode=OneWay}" SelectionChanged="productList_SelectionChanged" />
     </Grid>
 </Window>

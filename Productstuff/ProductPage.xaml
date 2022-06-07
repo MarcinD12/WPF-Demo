@@ -25,7 +25,7 @@
             <RowDefinition Height="*"/>
 
         </Grid.RowDefinitions>
-        <Button x:Name="addItem" Content="Dodaj Dzide" Grid.Column="2" Grid.Row="2" Click="addItem_Click" ></Button>
+        <Button x:Name="addItem" Content="DodajItem" Grid.Column="2" Grid.Row="2" Click="addItem_Click" ></Button>
 
     </Grid>
         <!--<TextBlock HorizontalAlignment="Left" Margin="303,204,0,0" Text="chuj" TextWrapping="Wrap" VerticalAlignment="Top" Height="128" Width="344"/>-->

@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using WPF_App.Productstuff;
 namespace WPF_App
 {
     /// <summary>
@@ -27,7 +28,8 @@ namespace WPF_App
 
         public void addItem_Click(object sender, RoutedEventArgs e)
         {
-            //Product.Create();
+            NewProductWindow newProduct = new NewProductWindow();
+            newProduct.Show();
         }
     }
 }
