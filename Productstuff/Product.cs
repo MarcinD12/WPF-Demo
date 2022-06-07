@@ -31,16 +31,9 @@ namespace WPF_App
 
         }
 
-        public static List<string> Types = new List<string>() { "Food","Drinks","Health&Beauty","Electronics","Diy","Pets"};
+        public static List<string> Types = new List<string>() { "Food","Drinks","HealthAndBeauty","Electronics","Diy","Pets"};
 
-        public static void Create()
-        {
-            using (Connection db = new Connection(Connection.connectionString))
-            {
-                //db.Add(new Product(db.Products.Max(x=>x.ProductID)+1, "dzida laserowa", "Diy", 2137));
-                //db.SaveChanges();
-            }
-        }
+        
 
        
     }

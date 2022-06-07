@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Users\ozjas\source\repos\WPF_App\App.xaml
-3385615003
+5-1002131969
 
-13-2024901416
+15-1987719236
 214-651841840
-MainWindow.xaml;Productstuff\NewProductWindow.xaml;Productstuff\ProductPage.xaml;
+MainWindow.xaml;Productstuff\AllProductsWindow.xaml;Productstuff\DeleteItemWindow.xaml;Productstuff\NewProductWindow.xaml;Productstuff\ProductPage.xaml;
 
-True
+False
 

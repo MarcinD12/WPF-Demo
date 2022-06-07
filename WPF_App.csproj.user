@@ -7,6 +7,12 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Productstuff\AllProductsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Productstuff\DeleteItemWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Productstuff\NewProductWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -16,6 +22,12 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Productstuff\AllProductsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Productstuff\DeleteItemWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Productstuff\NewProductWindow.xaml">

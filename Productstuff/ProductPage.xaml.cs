@@ -31,5 +31,17 @@ namespace WPF_App
             NewProductWindow newProduct = new NewProductWindow();
             newProduct.Show();
         }
+
+        private void deleteItem_Click(object sender, RoutedEventArgs e)
+        {
+            DeleteItemWindow deleteItemWindow = new();
+            deleteItemWindow.Show();
+        }
+
+        private void showItems_Click(object sender, RoutedEventArgs e)
+        {
+            AllProductsWindow allProductsWindow = new();
+            allProductsWindow.Show();
+        }
     }
 }

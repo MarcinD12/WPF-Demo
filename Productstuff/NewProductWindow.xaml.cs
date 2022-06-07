@@ -25,13 +25,11 @@ namespace WPF_App.Productstuff
             productList.ItemsSource = Product.Types;
         }
         public string selectedType { get; set; }
-
-        //private void ItemSelected(object sender, RoutedEventArgs e)
-        //{
-        //    selectedType = productList.SelectedItem.ToString();
-        //    MessageBox.Show(selectedType);
-        //}
-
+        private void productList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            selectedType = productList.SelectedItem.ToString();
+            //MessageBox.Show(selectedType);
+        }
         private void ProductAddBtn_Click(object sender, RoutedEventArgs e)
         {
             if (prodNameInp.Text!=""&&(prodPriceInp!=null||int.Parse(prodPriceInp.Text)<=0)&&selectedType!="")
@@ -40,6 +38,7 @@ namespace WPF_App.Productstuff
                 {
                     db.Add(new Product(db.Products.Max(x => x.ProductID) + 1, prodNameInp.Text.ToString(), selectedType, decimal.Parse(prodPriceInp.Text)));
                     db.SaveChanges();
+                    this.Hide();
                 }
             }
             else
@@ -49,16 +48,8 @@ namespace WPF_App.Productstuff
         
         }
 
-        //private void productList_Selected(object sender, RoutedEventArgs e)
-        //{
-            
-        //}
-
-        private void productList_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            selectedType = productList.SelectedItem.ToString();
-            MessageBox.Show(selectedType);
-        }
+ 
+        
     }
 
 }
