@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using WPF_App.Orderstuff;
 using Microsoft.EntityFrameworkCore;
 
 namespace WPF_App
@@ -46,6 +46,11 @@ namespace WPF_App
         private void productsWindowClick(object sender, RoutedEventArgs e)
         {
             MainFrame.Content = new ProductPage();
+        }
+
+        private void OrdersWindow_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new OrderPage();
         }
     }
 }
