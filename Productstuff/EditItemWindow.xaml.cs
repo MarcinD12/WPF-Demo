@@ -33,24 +33,9 @@ namespace WPF_App.Productstuff
             productToEdit.Type = productTypeEdit.ToString();
         }
 
-        private void productNameEdit_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            productToEdit.ProductName = productNameEdit.ToString();
-        }
+       
 
-        private void productPriceEdit_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            decimal res;
-            bool isnumeric = Decimal.TryParse(productPriceEdit.Text, out res);
-            if (isnumeric)
-            {
-                productToEdit.Price = res;
-            }
-            else
-            {
-                MessageBox.Show("REEEE1");
-            }
-        }
+       
 
         private void searchItem_Click(object sender, RoutedEventArgs e)
         {
@@ -59,7 +44,8 @@ namespace WPF_App.Productstuff
                 productToEdit = db.Products.Find(int.Parse(idToEdit.Text));
                 productNameEdit.Text = productToEdit.ProductName.ToString();
                 productPriceEdit.Text = productToEdit.Price.ToString();
-                productTypeEdit.SelectedItem = productToEdit.Type.ToString();
+                productTypeEdit.SelectedItem = productToEdit.Type;
+                //productTypeEdit.SelectedItem = productToEdit.Type.ToString();
                 
             }
         }
@@ -68,11 +54,13 @@ namespace WPF_App.Productstuff
         {
             using (Connection db = new Connection(Connection.connectionString))
             {
-                //nie działa
+                productToEdit.ProductName = productNameEdit.Text;
+                productToEdit.Price = decimal.Parse(productPriceEdit.Text);
+                productToEdit.Type = productTypeEdit.SelectedItem.ToString();
 
-                //db.Update(productToEdit);
-                //db.SaveChanges(); 
-                //db.Entry(productToEdit).CurrentValues.SetValues(productToEdit);
+                db.Update(productToEdit);
+                db.SaveChanges(); 
+                
             }
         }
     }

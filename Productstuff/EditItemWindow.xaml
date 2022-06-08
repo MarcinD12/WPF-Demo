@@ -25,8 +25,8 @@
         </Grid.RowDefinitions>
         <TextBox  x:Name="idToEdit" Text="" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Right" Width="50" ></TextBox>
         <TextBlock Text="Enter Id" Grid.Row="1" Grid.Column="1" ></TextBlock>
-        <TextBox x:Name="productNameEdit" Grid.Row="2" Grid.Column="1" TextChanged="productNameEdit_TextChanged"  ></TextBox>
-        <TextBox x:Name="productPriceEdit" Grid.Row="2" Grid.Column="3" TextChanged="productPriceEdit_TextChanged" ></TextBox>
+        <TextBox x:Name="productNameEdit" Grid.Row="2" Grid.Column="1"  ></TextBox>
+        <TextBox x:Name="productPriceEdit" Grid.Row="2" Grid.Column="3"  ></TextBox>
         <ComboBox Name="productTypeEdit" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="1" ItemsSource="{Binding Product.Types,Mode=OneWay}" SelectionChanged="productTypeEdit_SelectionChanged" />
         <Button x:Name="searchItem" Content="Show items" Grid.Column="3" Grid.Row="1" Click="searchItem_Click"   ></Button>
         <Button x:Name="applyChanges" Content="Apply" Grid.Column="1" Grid.Row="3" Click="applyChanges_Click"  ></Button>
