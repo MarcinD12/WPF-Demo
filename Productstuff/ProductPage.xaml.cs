@@ -24,6 +24,7 @@ namespace WPF_App
         public ProductPage()
         {
             InitializeComponent();
+            
         }
 
         public void addItem_Click(object sender, RoutedEventArgs e)
@@ -48,6 +49,22 @@ namespace WPF_App
         {
             EditItemWindow editItemWindow = new();
             editItemWindow.Show();
+        }
+        public string productInfo { get; set; }
+        public Product foundproduct { get; set; }
+        private void searchitem_Click(object sender, RoutedEventArgs e)
+        {
+            using(Connection db = new Connection(Connection.connectionString))
+            {
+                foundproduct = db.Products.Find(int.Parse(idToSearch.Text));
+                //MessageBox.Show(productInfo = (foundproduct.ProductName.ToString() + foundproduct.Type.ToString() + foundproduct.Price.ToString()));
+                //productInfo = "Product ID: {0} Product Name: {1} Product Type: {2} Product Price: {3}", foundproduct.ProductID.ToString(), foundproduct.ProductName.ToString(), foundproduct.Type.ToString(), foundproduct.Price.ToString();
+                productInfo = "Product ID: " + foundproduct.ProductID.ToString() +" Product Name: "+foundproduct.ProductName + "Product Type: " + foundproduct.Type + " Product Price" + foundproduct.Price ;
+                //productInfo = (foundproduct.ProductID.ToString()+" "+ foundproduct.ProductName.ToString()+" " + foundproduct.Type.ToString()+ " " + foundproduct.Price.ToString());
+                //MessageBox.Show(productInfo);
+                SearchedItem.Text = productInfo;
+                
+            }
         }
     }
 }
