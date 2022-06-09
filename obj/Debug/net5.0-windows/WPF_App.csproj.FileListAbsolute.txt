@@ -74,3 +74,5 @@ C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\StockStuff\StockMan
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\StockStuff\StockPage.g.cs
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\StockStuff\StockManipulation.baml
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\StockStuff\StockPage.baml
+C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\StockStuff\StockDataPage.g.cs
+C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\StockStuff\StockDataPage.baml

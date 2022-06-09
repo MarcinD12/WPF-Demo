@@ -23,13 +23,24 @@ namespace WPF_App.StockStuff
         public StockPage()
         {
             InitializeComponent();
+
+
         }
 
-        private void addItemtoStock_Click(object sender, RoutedEventArgs e)
+        private void stockUpdate_Click(object sender, RoutedEventArgs e)
         {
             stockFrame.Content = new StockManipulation();
 
         }
+
+        private void everyshopstock_Click(object sender, RoutedEventArgs e)
+        {
+            stockFrame.Content = new StockDataPage();
+        }
+        // public Microsoft.EntityFrameworkCore.DbSet<Stock>  dupa {get;set;}
+
+
+
 
     }
 }

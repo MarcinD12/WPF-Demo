@@ -27,11 +27,7 @@ namespace WPF_App.Productstuff
             using (Connection db = new Connection(Connection.connectionString))
             {
                 
-                allproductData = db.Products;
-                //foreach (var item in allproductData)
-                //{
-                //    MessageBox.Show(item.ProductName);
-                //}
+                allproductData = db.Products;             
                 ProductsGrid.ItemsSource = allproductData.ToList();
             }
             
