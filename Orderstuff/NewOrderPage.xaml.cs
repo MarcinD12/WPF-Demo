@@ -20,9 +20,14 @@ namespace WPF_App.Orderstuff
     /// </summary>
     public partial class NewOrderPage : Page
     {
+        
         public NewOrderPage()
         {
             InitializeComponent();
+            using (Connection db = new Connection(Connection.connectionString))
+            {
+            
+            }
         }
     }
 }

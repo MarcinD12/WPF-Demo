@@ -27,6 +27,6 @@
             <RowDefinition Height="20"/>
 
         </Grid.RowDefinitions>
-        
+        <DataGrid x:Name="availableProducts" Grid.Row="3" Grid.Column="1" ItemsSource="{Binding}" ></DataGrid>
     </Grid>
 </Page>

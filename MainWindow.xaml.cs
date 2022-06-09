@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WPF_App.Orderstuff;
 using Microsoft.EntityFrameworkCore;
-
+using WPF_App.StockStuff;
 namespace WPF_App
 {
     /// <summary>
@@ -51,6 +51,11 @@ namespace WPF_App
         private void OrdersWindow_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.Content = new OrderPage();
+        }
+
+        private void StockWindow_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new StockPage();
         }
     }
 }

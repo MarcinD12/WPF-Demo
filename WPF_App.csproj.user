@@ -28,6 +28,12 @@
     <Compile Update="Productstuff\ProductPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="StockStuff\StockManipulation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StockStuff\StockPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
@@ -52,6 +58,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Productstuff\ProductPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StockStuff\StockManipulation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StockStuff\StockPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

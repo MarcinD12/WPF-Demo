@@ -66,3 +66,11 @@ C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Productstuff\AllPro
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Productstuff\AllProductsWindow.baml
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Productstuff\EditItemWindow.g.cs
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Productstuff\EditItemWindow.baml
+C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Orderstuff\NewOrderPage.g.cs
+C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Orderstuff\OrderPage.g.cs
+C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Orderstuff\NewOrderPage.baml
+C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Orderstuff\OrderPage.baml
+C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\StockStuff\StockManipulation.g.cs
+C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\StockStuff\StockPage.g.cs
+C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\StockStuff\StockManipulation.baml
+C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\StockStuff\StockPage.baml

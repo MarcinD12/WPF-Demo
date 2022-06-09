@@ -12,14 +12,15 @@ namespace WPF_App
         public int ShopId { get; set; }
         public int ProductID { get; set; }
         public int Amount { get; set; }
-        
+        public DateTime Date { get; set; }
 
-        public Order(int OrderID_, int ShopId, int ProductID_, int Amount_)
+        public Order(int OrderID_, int ShopId, int ProductID_, int Amount_, DateTime DateTime_)
         {
             this.OrderID = OrderID_;
             this.ShopId = ShopId;
             this.ProductID = ProductID_;
             this.Amount = Amount_;
+            this.Date = DateTime_;
             
         }
         public Order()

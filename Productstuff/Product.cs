@@ -31,7 +31,7 @@ namespace WPF_App
 
         }
 
-        public static List<string> Types = new List<string>() { "Food","Drinks","HealthAndBeauty","Electronics","Diy","Pets"};
+        public static List<string> Types = new List<string>() { "Engine","Exhaust system","Suspension","Brake system","Transmission","Electrical system","Accesories"}; //7 types
 
         
 
