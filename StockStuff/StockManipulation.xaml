@@ -26,9 +26,9 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="xDDD" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center"></TextBlock>
+        <TextBlock x:Name="curentstocks" Text="" Grid.Column="4" Grid.Row="2" VerticalAlignment="Center"></TextBlock>
         <ComboBox x:Name="productComboBox" Grid.Row="2" Grid.Column="1"  SelectionChanged="productComboBox_SelectionChanged" ></ComboBox>
         <ComboBox x:Name="shopCombobox" Grid.Row="2" Grid.Column="2"  Visibility="Hidden" SelectionChanged="shopCombobox_SelectionChanged"></ComboBox>
-        <TextBox x:Name="currentStock" Grid.Row="2" Grid.Column="4" Text=""></TextBox>
+        <!--<TextBox x:Name="currentStock" Grid.Row="2" Grid.Column="4" Text=""></TextBox>-->
     </Grid>
 </Page>
