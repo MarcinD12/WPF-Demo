@@ -50,17 +50,18 @@ namespace WPF_App.Productstuff
             }
         }
 
-        private void applyChanges_Click(object sender, RoutedEventArgs e)
+        private async void  applyChanges_Click(object sender, RoutedEventArgs e)
         {
             using (Connection db = new Connection(Connection.connectionString))
             {
                 productToEdit.ProductName = productNameEdit.Text;
                 productToEdit.Price = decimal.Parse(productPriceEdit.Text);
                 productToEdit.Type = productTypeEdit.SelectedItem.ToString();
-
-                db.Update(productToEdit);
-                db.SaveChanges(); 
                 
+                db.Update(productToEdit);
+                //db.SaveChanges(); 
+                await db.SaveChangesAsync();
+                this.Hide();
             }
         }
     }

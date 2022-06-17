@@ -24,7 +24,7 @@ namespace WPF_App.Productstuff
             InitializeComponent();
         }
         private  int idToDelete{ get; set; }
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private  void Button_Click(object sender, RoutedEventArgs e) ///tu async nie działa
         {
             using (Connection db = new Connection(Connection.connectionString))
             {
@@ -32,6 +32,8 @@ namespace WPF_App.Productstuff
                 {
                     var toDelete = db.Products.Find(idToDelete);
                     db.Remove(toDelete);
+                    
+                    //db.SaveChangesAsync();
                     db.SaveChanges();
                     this.Hide();
                 }
