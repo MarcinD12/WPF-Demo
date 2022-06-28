@@ -29,12 +29,13 @@ namespace WPF_App.StockStuff
             {
 
                 var products = from a in db.Products
-                               select new { a.ProductID, a.ProductName };
+                               select a;
 
-                
+                // productComboBox.ItemsSource = products.ToList();
+
                 productComboBox.ItemsSource = products.ToList();
                 shopCombobox.ItemsSource = (from b in db.Shop
-                                           select new { b.ShopId, b.City }).ToList();
+                                           select b).ToList();
 
             }
 
@@ -52,7 +53,9 @@ namespace WPF_App.StockStuff
             using (Connection db = new Connection(Connection.connectionString))
             {
                 selprod = db.Products.Find(productComboBox.SelectedIndex+1);
-               
+                prodid = selprod.ProductID;
+                
+                MessageBox.Show(selprod.ProductName);
                 shopCombobox.Visibility = Visibility.Visible;
                 //chuj = shopxd.ToList();
             }
@@ -63,15 +66,24 @@ namespace WPF_App.StockStuff
             using (Connection db = new Connection(Connection.connectionString))
             {
                 selShopId = shopCombobox.SelectedIndex+1;
-                MessageBox.Show(selprod.ProductID + " " + selShopId);
+                MessageBox.Show(selShopId.ToString());
                 var xd = (from x in db.Stock
-                          where x.ProductID == selprod.ProductID && x.ShopId == selShopId
-                          select x.Amount).FirstOrDefault();
-                MessageBox.Show(xd.ToString());
+                         where x.ProductID == prodid && x.ShopId==selShopId
+                         select x);
+                foreach (var item in xd)
+                {
+                    MessageBox.Show(item.ProductID.ToString());
+                }
+               // MessageBox.Show(xd.ToString());
+                //
+                //curentstocks.Text = xd.ProductID.ToString();
+                //MessageBox.Show(selprod.ProductID + " " + selShopId);
+                
+                //MessageBox.Show(xd.ToString());
 
                 //currentStock.Text = xd.ToString();
 
-                curentstocks.Text = xd.ToString();
+                //curentstocks.Text = xd.ToString();
             }
 
 
