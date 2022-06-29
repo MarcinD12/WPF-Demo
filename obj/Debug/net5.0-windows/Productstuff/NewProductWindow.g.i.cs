@@ -85,7 +85,7 @@ namespace WPF_App.Productstuff {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WPF_App;component/productstuff/newproductwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WPF_App;V1.0.0.0;component/productstuff/newproductwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Productstuff\NewProductWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
