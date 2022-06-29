@@ -34,7 +34,7 @@
         <Button x:Name="searchitem" Content="Search item-ID:" Grid.Column="1" Grid.Row="3" Click="searchitem_Click"  ></Button>
         <TextBox x:Name="idToSearch" Grid.Row="3" Grid.Column="2"></TextBox>
         
-        <TextBlock x:Name="SearchedItem" Text="{Binding productInfo,Mode=OneWay}" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="3"></TextBlock>
+        <TextBlock x:Name="SearchedItem" Text="{Binding productInfo,Mode=OneWay}" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="4"></TextBlock>
     </Grid>
         <!--<TextBlock HorizontalAlignment="Left" Margin="303,204,0,0" Text="chuj" TextWrapping="Wrap" VerticalAlignment="Top" Height="128" Width="344"/>-->
 

@@ -34,13 +34,13 @@ namespace WPF_App.StockStuff
                 
                 productComboBox.ItemsSource = products.ToList();
                 shopCombobox.ItemsSource = (from b in db.Shop
-                                           select new { b.ShopId, b.City }).ToList();
+                                           select b).ToList();
 
             }
 
         }
 
-        public Shop avShop { get; set; }
+        public Stock selshop { get; set; }
         public int prodid { get; set; }
 
         public Product selprod { get; set; }
@@ -48,13 +48,13 @@ namespace WPF_App.StockStuff
         public int selShopId { get; set; }
         private void productComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            //MessageBox.Show("xd?");
+            
             using (Connection db = new Connection(Connection.connectionString))
             {
                 selprod = db.Products.Find(productComboBox.SelectedIndex+1);
                
                 shopCombobox.Visibility = Visibility.Visible;
-                //chuj = shopxd.ToList();
+               
             }
         }
         
@@ -63,13 +63,13 @@ namespace WPF_App.StockStuff
             using (Connection db = new Connection(Connection.connectionString))
             {
                 selShopId = shopCombobox.SelectedIndex+1;
-                MessageBox.Show(selprod.ProductID + " " + selShopId);
+               // MessageBox.Show(selShopId.ToString());
+                
+                //MessageBox.Show(selprod.ProductID + " " + selShopId);
                 var xd = (from x in db.Stock
-                          where x.ProductID == selprod.ProductID && x.ShopId == selShopId
-                          select x.Amount).FirstOrDefault();
-                MessageBox.Show(xd.ToString());
-
-                //currentStock.Text = xd.ToString();
+                          where x.ProductID == selprod.ProductID && x.ShopId == selshop.ShopId
+                          select x).FirstOrDefault();
+               
 
                 curentstocks.Text = xd.ToString();
             }
