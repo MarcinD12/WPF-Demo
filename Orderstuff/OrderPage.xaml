@@ -23,13 +23,18 @@
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="20"/>
 
             
         </Grid.RowDefinitions>
         <Frame x:Name="OrderFrame" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="5" Grid.RowSpan="2"></Frame>
-        <Button x:Name="newOrder" Grid.Column="1" Grid.Row="2" Content="Place new Order" Click="newOrder_Click"></Button>
-        
+        <Button x:Name="newOrder" Grid.Column="5" Grid.Row="3" Content="Place new Order" Click="newOrder_Click"></Button>
+        <ComboBox x:Name="productselection" Grid.Column="1" Grid.Row="2" SelectionChanged="productselection_SelectionChanged" ></ComboBox>
+        <ComboBox x:Name="shopselection" Grid.Column="2" Grid.Row="2" SelectionChanged="shopselection_SelectionChanged"></ComboBox>
+        <TextBox x:Name="selAmount" Grid.Row="2" Grid.Column="3" TextChanged="selAmount_TextChanged"></TextBox>
+        <Button x:Name="allOrders" Grid.Column="5" Grid.Row="4" Content="Show all orders" Click="allOrders_Click"></Button>
+        <DataGrid x:Name="allorders" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="5"></DataGrid>
     </Grid>
 </Page>

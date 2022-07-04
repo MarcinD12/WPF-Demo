@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations;
+
 namespace WPF_App
 {
 	[Keyless]
