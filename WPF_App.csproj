@@ -14,8 +14,4 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Resource Include="ac066e8922f3264ae8fb068cf2553465.jpg" />
-  </ItemGroup>
-
 </Project>
