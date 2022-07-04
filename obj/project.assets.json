@@ -5706,11 +5706,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ozjas\\source\\repos\\MarcinD123\\WPF_App\\WPF_App.csproj",
+      "projectUniqueName": "C:\\Users\\ozjas\\source\\repos\\WPF_App\\WPF_App.csproj",
       "projectName": "WPF_App",
-      "projectPath": "C:\\Users\\ozjas\\source\\repos\\MarcinD123\\WPF_App\\WPF_App.csproj",
+      "projectPath": "C:\\Users\\ozjas\\source\\repos\\WPF_App\\WPF_App.csproj",
       "packagesPath": "C:\\Users\\ozjas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ozjas\\source\\repos\\MarcinD123\\WPF_App\\obj\\",
+      "outputPath": "C:\\Users\\ozjas\\source\\repos\\WPF_App\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ozjas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5754,6 +5754,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.16, 5.0.16]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -5762,7 +5768,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

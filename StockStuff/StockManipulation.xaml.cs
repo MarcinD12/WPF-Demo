@@ -20,7 +20,7 @@ namespace WPF_App.StockStuff
     /// </summary>
     public partial class StockManipulation : Page
     {
-        //public List chuj { get; set; }
+       
         public StockManipulation()
         {
 
@@ -41,7 +41,7 @@ namespace WPF_App.StockStuff
 
         }
 
-        public Stock selshop { get; set; }
+        public Stock1 selshop { get; set; }
         public int prodid { get; set; }
 
         public Product selprod { get; set; }
@@ -55,7 +55,7 @@ namespace WPF_App.StockStuff
                 selprod = db.Products.Find(productComboBox.SelectedIndex+1);
                 prodid = selprod.ProductID;
                 
-                MessageBox.Show(selprod.ProductName);
+                MessageBox.Show(selprod.ProductID.ToString());
                 shopCombobox.Visibility = Visibility.Visible;
                
             }
@@ -66,38 +66,33 @@ namespace WPF_App.StockStuff
             using (Connection db = new Connection(Connection.connectionString))
             {
                 selShopId = shopCombobox.SelectedIndex+1;
-<<<<<<< HEAD
-               // MessageBox.Show(selShopId.ToString());
+              MessageBox.Show(selShopId.ToString());
                 
                 //MessageBox.Show(selprod.ProductID + " " + selShopId);
-                var xd = (from x in db.Stock
-                          where x.ProductID == selprod.ProductID && x.ShopId == selshop.ShopId
+                var curstock = (from x in db.Stock
+                          where x.ProductID == prodid && x.ShopId == selShopId
                           select x).FirstOrDefault();
-               
-=======
-                MessageBox.Show(selShopId.ToString());
-                var xd = (from x in db.Stock
-                         where x.ProductID == prodid && x.ShopId==selShopId
-                         select x);
-                foreach (var item in xd)
-                {
-                    MessageBox.Show(item.ProductID.ToString());
-                }
-               // MessageBox.Show(xd.ToString());
-                //
-                //curentstocks.Text = xd.ProductID.ToString();
-                //MessageBox.Show(selprod.ProductID + " " + selShopId);
-                
-                //MessageBox.Show(xd.ToString());
 
-                //currentStock.Text = xd.ToString();
->>>>>>> 654e4c39b74d6be480964be5692679fcaab0f0a3
-
-                //curentstocks.Text = xd.ToString();
+                //MessageBox.Show(curstock.Amount.ToString());
+                curentstocks.Text = curstock.Amount.ToString();
             }
 
 
             //currentStock.Text =
+        }
+
+        private void applyChangeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            using (Connection db = new Connection(Connection.connectionString))
+            {
+                Stock1 stockToChange = (from x in db.Stock
+                                       where x.ProductID == prodid && x.ShopId == selShopId
+                                       select x).FirstOrDefault();
+                stockToChange.Amount = int.Parse(newStock.Text);
+                db.Update(stockToChange);
+                db.SaveChanges();
+                MessageBox.Show("Stock Updated");
+            }
         }
     }
 }

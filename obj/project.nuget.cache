@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZxiCEpcTYdC1eCquwDEVhIh9UuuUaCJ3Q78OhQ7o9i9p0F8IHdpo8ETgamIgpSfB2UpEsinCS/08jFw78k+6Ng==",
+  "dgSpecHash": "6zOSrMxLiYN3OpSl5ZNUpXWz+4Kr8eHfTIJUb/Z5Z6kQCmTkeP5QBy2mfyL87wh1FmH1toRSPaqssjCc2mHShA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ozjas\\source\\repos\\MarcinD123\\WPF_App\\WPF_App.csproj",
+  "projectFilePath": "C:\\Users\\ozjas\\source\\repos\\WPF_App\\WPF_App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ozjas\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\ozjas\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
@@ -97,7 +97,8 @@
     "C:\\Users\\ozjas\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\ozjas\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\ozjas\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\ozjas\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\ozjas\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\ozjas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
   ],
   "logs": []
 }

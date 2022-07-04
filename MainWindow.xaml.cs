@@ -37,7 +37,7 @@ namespace WPF_App
                 //catch (Exception)
                 //{
 
-                //    MessageBox.Show("xD");
+                //    MessageBox.Show("curstock");
                 //}//var x = db.Add
                 
             }

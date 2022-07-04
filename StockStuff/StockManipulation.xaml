@@ -27,8 +27,11 @@
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
         <TextBlock x:Name="curentstocks" Text="" Grid.Column="4" Grid.Row="2" VerticalAlignment="Center"></TextBlock>
+        <TextBlock Text="Current Stock:" Grid.Row="2" Grid.Column="3"></TextBlock>
         <ComboBox x:Name="productComboBox" Grid.Row="2" Grid.Column="1"  SelectionChanged="productComboBox_SelectionChanged" DisplayMemberPath ="ProductName" ></ComboBox>
         <ComboBox x:Name="shopCombobox" Grid.Row="2" Grid.Column="2"  Visibility="Hidden" SelectionChanged="shopCombobox_SelectionChanged" DisplayMemberPath="City"></ComboBox>
+        <TextBox x:Name="newStock" Grid.Row="3" Grid.Column="3" Text="ENTER NEW STOCK"></TextBox>
+        <Button x:Name="applyChangeBtn" Grid.Column="4" Grid.Row="3" Content="Apply change" Click="applyChangeBtn_Click"></Button>
         <!--<TextBox x:Name="currentStock" Grid.Row="2" Grid.Column="4" Text=""></TextBox>-->
     </Grid>
 </Page>
