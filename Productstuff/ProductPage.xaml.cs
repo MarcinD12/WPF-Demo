@@ -51,7 +51,11 @@ namespace WPF_App
             editItemWindow.Show();
         }
         public string productInfo { get; set; }
-        public Product foundproduct { get; set; }
+        private Product foundproduct { get; set; }
+        /// <summary>
+        ///Displays data of Product with set ID 
+        /// </summary>
+        
         private void searchitem_Click(object sender, RoutedEventArgs e)
         {
             using(Connection db = new Connection(Connection.connectionString))

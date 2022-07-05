@@ -21,6 +21,9 @@ namespace WPF_App.StockStuff
     public partial class StockDataPage : Page
     {
         //private Microsoft.EntityFrameworkCore.DbSet<Stock> allproductData { get; set; }
+        /// <summary>
+        /// With initialization of StockDataPage StockDataGrid is filled with values from DB.Products and DB.Shop
+        /// </summary>
         public StockDataPage()
         {
 
@@ -31,9 +34,7 @@ namespace WPF_App.StockStuff
                         
                 var stockData = from s in db.Stock join p in db.Products on s.ProductID equals p.ProductID join curstock in db.Shop on s.ShopId equals curstock.ShopId orderby s.ProductID select new { curstock.ShopId,curstock.City,s.ProductID, s.Amount, p.ProductName, p.Price, } ;
                 stockData.ToList();
-                
 
-               
                 StockDataGrid.ItemsSource = stockData.ToList();
  
             }

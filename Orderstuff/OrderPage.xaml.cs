@@ -19,7 +19,10 @@ namespace WPF_App.Orderstuff
     /// Interaction logic for OrderPage.xaml
     /// </summary>
     public partial class OrderPage : Page
-    {
+    {       
+        /// <summary>
+        /// Initialization of order page, filling combobox with available values from DB
+        /// </summary>
         public OrderPage()
         {
             InitializeComponent();
@@ -33,9 +36,16 @@ namespace WPF_App.Orderstuff
 
 
         }
+        /// <summary>
+        /// variables used to hold selected IDs, and amount
+        /// </summary>
         private int selprod;
         private int selshop;
         private int amount;
+        /// <summary>
+        /// By clicking "Place new order" new Order object is created with values stored in holded variables
+        /// In DB.Stock stock of selected Product in Selected shop is updated 
+        /// </summary>     
         private void newOrder_Click(object sender, RoutedEventArgs e)
         {
             using (Connection db = new Connection(Connection.connectionString))
@@ -60,25 +70,33 @@ namespace WPF_App.Orderstuff
             }
             //OrderFrame.Content = new NewOrderPage();
         }
-
+        /// <summary>
+        /// by selecting product.Name "selprod" is assigned with proper ProductID  
+        /// </summary>   
         private void productselection_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             selprod = productselection.SelectedIndex + 1;
             //MessageBox.Show(selprod.ToString());
         }
-
+        /// <summary>
+        ///  by selecting Shop.City "selshop" is assigned with proper ShopId
+        /// </summary>       
         private void shopselection_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             selshop = shopselection.SelectedIndex + 1;
         }
 
-
+        /// <summary>
+        /// with every text change in selAmount TextBox amount is updated with new value
+        /// </summary>
         private void selAmount_TextChanged(object sender, TextChangedEventArgs e)
         {
             amount = int.Parse(selAmount.Text);
            // MessageBox.Show(amount.ToString());
         }
-
+        /// <summary>
+        /// By clicking "Show all orders" allorders DataGrid is filled with all records from DB.Orders
+        /// </summary>       
         private void allOrders_Click(object sender, RoutedEventArgs e)
         {
             using (Connection db = new Connection(Connection.connectionString))

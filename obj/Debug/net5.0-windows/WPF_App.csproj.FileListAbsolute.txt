@@ -77,7 +77,6 @@ C:\Users\ozjas\source\repos\MarcinD123\WPF_App\obj\Debug\net5.0-windows\ref\WPF_
 C:\Users\ozjas\source\repos\MarcinD123\WPF_App\obj\Debug\net5.0-windows\WPF_App.pdb
 C:\Users\ozjas\source\repos\MarcinD123\WPF_App\obj\Debug\net5.0-windows\WPF_App.genruntimeconfig.cache
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\MainWindow.g.cs
-C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Orderstuff\NewOrderPage.g.cs
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Orderstuff\OrderPage.g.cs
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Productstuff\AllProductsWindow.g.cs
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Productstuff\DeleteItemWindow.g.cs
@@ -135,7 +134,6 @@ C:\Users\ozjas\source\repos\WPF_App\bin\Debug\net5.0-windows\runtimes\win-x86\na
 C:\Users\ozjas\source\repos\WPF_App\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\ozjas\source\repos\WPF_App\bin\Debug\net5.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\MainWindow.baml
-C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Orderstuff\NewOrderPage.baml
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Orderstuff\OrderPage.baml
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Productstuff\AllProductsWindow.baml
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\Productstuff\DeleteItemWindow.baml
@@ -153,3 +151,4 @@ C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\WPF_App.csproj.Core
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\WPF_App.csproj.CopyComplete
 C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\WPF_App.genruntimeconfig.cache
 C:\Users\ozjas\source\repos\WPF_App\bin\Debug\net5.0-windows\ref\WPF_App.dll
+C:\Users\ozjas\source\repos\WPF_App\obj\Debug\net5.0-windows\WPF_App.csproj.AssemblyReference.cache

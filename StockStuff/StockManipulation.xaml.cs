@@ -40,8 +40,6 @@ namespace WPF_App.StockStuff
             }
 
         }
-
-        public Stock1 selshop { get; set; }
         public int prodid { get; set; }
 
         public Product selprod { get; set; }
@@ -77,8 +75,6 @@ namespace WPF_App.StockStuff
                 curentstocks.Text = curstock.Amount.ToString();
             }
 
-
-            //currentStock.Text =
         }
 
         private void applyChangeBtn_Click(object sender, RoutedEventArgs e)

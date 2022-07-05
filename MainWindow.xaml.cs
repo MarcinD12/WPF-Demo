@@ -42,7 +42,10 @@ namespace WPF_App
                 
             }
         }
-
+        /// <summary>
+        /// By clicking these buttons proper page will be displayed in MainFrame 
+        /// </summary>
+        
         private void productsWindowClick(object sender, RoutedEventArgs e)
         {
             MainFrame.Content = new ProductPage();

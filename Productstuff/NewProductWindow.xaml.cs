@@ -30,6 +30,9 @@ namespace WPF_App.Productstuff
             selectedType = productList.SelectedItem.ToString();
             //MessageBox.Show(selectedType);
         }
+        /// <summary>
+        /// New Product object is created with set values, and if possible added to DB, else Message box is showed
+        /// </summary>
         private async void  ProductAddBtn_Click(object sender, RoutedEventArgs e)
         {
             if (prodNameInp.Text!=""&&(prodPriceInp!=null||int.Parse(prodPriceInp.Text)<=0)&&selectedType!="")
@@ -44,7 +47,7 @@ namespace WPF_App.Productstuff
             }
             else
             {
-                MessageBox.Show("REEEEEEEEE");
+                MessageBox.Show("Wrong Values!");
             }
         
         }

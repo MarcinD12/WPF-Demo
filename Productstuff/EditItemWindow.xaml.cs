@@ -19,24 +19,25 @@ namespace WPF_App.Productstuff
     /// </summary>
     public partial class EditItemWindow : Window
     {
+        /// <summary>
+        /// initialization of EditItemWindow
+        /// Filling productTypeEdit ComboBox with available product types
+        /// </summary>
         public EditItemWindow()
         {
             InitializeComponent();
             productTypeEdit.ItemsSource = Product.Types;
 
         }
-        public Product productToEdit { get; set; }
-
-
+        private Product productToEdit { get; set; }
+        
         private void productTypeEdit_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             productToEdit.Type = productTypeEdit.ToString();
         }
-
-       
-
-       
-
+        /// <summary>
+        /// serching for product with set id, and saving it into "productToEdit"
+        /// </summary>       
         private void searchItem_Click(object sender, RoutedEventArgs e)
         {
             using (Connection db = new Connection(Connection.connectionString))
@@ -49,7 +50,9 @@ namespace WPF_App.Productstuff
                 
             }
         }
-
+        /// <summary>
+        /// by clicking "Apply Change" btn set values are assigned to selected item, and its saved to DB
+        /// </summary>
         private async void  applyChanges_Click(object sender, RoutedEventArgs e)
         {
             using (Connection db = new Connection(Connection.connectionString))

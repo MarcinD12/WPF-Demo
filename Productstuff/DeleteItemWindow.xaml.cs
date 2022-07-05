@@ -22,8 +22,12 @@ namespace WPF_App.Productstuff
         public DeleteItemWindow()
         {
             InitializeComponent();
-        }
+        }       
         private  int idToDelete{ get; set; }
+        /// <summary>
+        /// By clicking "DELETE" button Product with set id is removed from DB
+        /// </summary>
+
         private  void Button_Click(object sender, RoutedEventArgs e) ///tu async nie działa
         {
             using (Connection db = new Connection(Connection.connectionString))
@@ -39,7 +43,9 @@ namespace WPF_App.Productstuff
                 }
             }
         }
-
+        /// <summary>
+        /// with every change of text new value is assigned to "idToDelete" variable
+        /// </summary>       
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             idToDelete = int.Parse(IdToDelete.Text);
